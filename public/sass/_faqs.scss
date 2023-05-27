@@ -1,0 +1,40 @@
+.faq {
+  margin-bottom: 10rem;
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    align-items: center;
+    .image {
+      flex: 1 1 23rem;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  &__content {
+    flex: 1 1 20rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    &-item {
+      display: flex;
+      flex-direction: column;
+      row-gap: 1rem;
+      .header {
+        padding: 0 1rem;
+        color: var(--primary);
+        font-weight: 600;
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+      .desc {
+        color: var(--secondary);
+        // padding: 1rem 1rem;
+        overflow: hidden;
+        height: 0;
+        box-shadow: var(--box-shadow);
+      }
+    }
+  }
+}

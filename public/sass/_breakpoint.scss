@@ -1,0 +1,89 @@
+@media screen and (max-width: 1030px) {
+  html {
+    font-size: 90%;
+  }
+  .faq {
+    &__content {
+      row-gap: 1rem;
+      margin-top: 1rem;
+      .header {
+        font-size: 1.2rem;
+      }
+      &-item {
+        row-gap: 0;
+      }
+    }
+  }
+  .review {
+    .slide {
+      padding: 3rem 1.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 830px) {
+  html {
+    font-size: 80%;
+  }
+  .review {
+    .slide {
+      i {
+        margin: 0;
+      }
+    }
+  }
+  .header {
+    .nav {
+      &__logo {
+        padding-left: 3rem;
+      }
+      &__list {
+        &.show-menu {
+          right: 0;
+        }
+        position: fixed;
+        background-color: var(--secondary);
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        height: 80%;
+        top: 0;
+        right: -100%;
+        box-shadow: -2px 0 4px hsla(152, 24%, 15%, 0.5);
+        padding: 5rem 0.5rem 0 0.5rem;
+        border-radius: 1rem 0 0 1rem;
+        font-size: 1.4rem;
+        a {
+          color: black;
+          &:hover {
+            color: white;
+          }
+        }
+        .btn-primary {
+          background: var(--primary);
+          font-size: 1.4rem;
+          font-weight: 500;
+          color: white;
+          &:hover {
+            transform: scale(0.9);
+            transition: all 0.3s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+  #menu-bars {
+    font-size: 1.4rem;
+    position: absolute;
+    top: 35%;
+    right: 5%;
+    cursor: pointer;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 558px) {
+  html {
+    font-size: 60%;
+  }
+}

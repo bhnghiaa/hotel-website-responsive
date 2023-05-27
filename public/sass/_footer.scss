@@ -1,0 +1,57 @@
+.footer {
+  background: var(--secondary);
+  padding: 3rem 5rem;
+  .credit {
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 1.3rem;
+    color: white;
+    span {
+      color: var(--primary);
+    }
+  }
+  .share {
+    padding: 2rem;
+    text-align: center;
+    border-bottom: 1px solid var(--primary);
+    a {
+      color: var(--primary);
+      font-size: 1.3rem;
+      width: 3rem;
+      height: 3rem;
+      line-height: 3rem;
+      border-radius: 50%;
+      border: 1px solid var(--primary);
+      margin: 0.5rem;
+      &:hover {
+        background: var(--primary);
+        color: white;
+        transform: rotate(360deg);
+      }
+    }
+  }
+  &__container {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    .box {
+      display: flex;
+      flex-direction: column;
+      row-gap: 2rem;
+      h4,
+      i {
+        color: var(--primary);
+        font-weight: 600;
+      }
+      a {
+        color: white;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        &:hover {
+          color: var(--primary);
+        }
+      }
+    }
+  }
+}

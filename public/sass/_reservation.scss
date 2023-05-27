@@ -1,0 +1,30 @@
+.reservation {
+  form {
+    .container {
+      margin-top: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      .box {
+        flex: 1 1 20rem;
+        p {
+          padding: 0 0.75rem;
+          margin-bottom: 0;
+        }
+        input,
+        select {
+          border-bottom: 2px solid #eee;
+          border-radius: 0;
+        }
+      }
+    }
+    .btn {
+      margin-top: 1.5rem;
+      margin-left: 0.75rem;
+      margin-bottom: 1rem;
+    }
+    background: transparent;
+    border: 3px solid #eee;
+    border-radius: 8px;
+  }
+}
