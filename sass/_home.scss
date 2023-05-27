@@ -1,0 +1,41 @@
+.home {
+  .slide {
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    background-position: center center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 2rem;
+      margin-left: auto;
+      margin-right: auto;
+      color: white;
+      h3 {
+        font-size: 3rem;
+      }
+    }
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    // padding: 0.75rem 0.75rem;
+    // line-height: 3rem;
+    // background: var(--white);
+    color: var(--primary);
+  }
+
+  .swiper-button-next:hover,
+  .swiper-button-prev:hover {
+    background: var(--primary);
+    color: var(--white);
+  }
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 1.5rem;
+  }
+}
